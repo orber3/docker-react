@@ -5,4 +5,4 @@ before_install:
   - docker build -t orber3/docker-react -f Dockerfile.dev .
 
 script:
-  - docker run -e CI=true USERNAME/docker-react npm run test
+  - docker run -e CI=true orber3/docker-react npm run test
