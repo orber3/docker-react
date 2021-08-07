@@ -7,6 +7,5 @@ sudo: required
 before_install:
   - docker build -t orber3/docker-react -f Dockerfile.dev .
 
-  
 script:
   - docker run -e CI=true USERNAME/docker-react npm run test
